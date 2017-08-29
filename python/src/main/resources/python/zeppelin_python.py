@@ -28,9 +28,9 @@ import base64
 
 from io import BytesIO
 try:
-    from StringIO import StringIO
-except ImportError:
     from io import StringIO
+except ImportError:
+    from StringIO import StringIO
 
 # for back compatibility
 

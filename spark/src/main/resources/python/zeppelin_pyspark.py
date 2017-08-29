@@ -25,9 +25,9 @@ import ast
 import warnings
 
 try:
-    from StringIO import StringIO
-except ImportError:
     from io import StringIO
+except ImportError:
+    from StringIO import StringIO
 
 # for back compatibility
 from pyspark.sql import SQLContext, HiveContext, Row
